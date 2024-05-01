@@ -1,0 +1,60 @@
+.intro {
+  text-align: left;
+  display: block;
+  margin: 92px auto 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1017px;
+}
+
+.intro__title {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  text-align: left;
+  max-width: 1017px;
+  max-height: 116px;
+}
+
+.intro__texts {
+  text-align: left;
+  display: block;
+}
+
+.intro__text {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  margin: 40px 0 0;
+  width: 722px;
+  position: relative;
+}
+
+.intro__quote {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: right;
+  position: absolute;
+  max-width: 722px;
+  margin: 10px 2px 0px 330px;
+}
+
+.intro__paragraph {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.08px;
+  text-align: left;
+  width: 720px;
+  margin: 32px 0 0;
+}
