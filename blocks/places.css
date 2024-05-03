@@ -13,16 +13,14 @@
 .place {
   display: grid;
   display: -ms-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 40px 48px;
+  gap: 30px 20px;
   grid-template-areas:
-    "title website"
+    "title subtitle"
     "image paragraphs"
-    "image paragraphs"
-    "button paragraphs";
+    "link paragraphs";
   max-width: 984px;
-  max-height: 756px;
+  width: 100%;
+  max-height: 900px;
 }
 
 .place__title {
@@ -31,18 +29,28 @@
   font-weight: 900;
   line-height: 76px;
   text-align: left;
-  max-width: 460px;
+  max-width: 584px;
+  width: 100%;
   max-height: 152px;
   margin: 0;
+  grid-column: span 3;
+  grid-area: title;
 }
 
-.place__button {
+.place__image {
+  width: 100%;
+  max-width: 460px;
+  grid-area: image;
+}
+
+.place__link {
   font-family: "Inter", arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 21.78px;
   text-align: left;
   max-width: 355px;
+  width: 100%;
   max-height: 48px;
   padding: 13px 20px 13px 20px;
   border-radius: 4px;
@@ -51,25 +59,25 @@
   justify-content: center;
   text-decoration: none;
   color: white;
+  cursor:pointer;
   background-color: #0278fe;
+  grid-area: link;
 }
 
-.place__button:hover {
+.place__link:hover {
   background-color: #0063d2;
 }
 
-.place__image {
-  max-width: 460px;
-}
-
-.place__website {
+.place__subtitle {
   max-width: 456px;
   max-height: 45px;
   margin-top: 107px;
   margin-bottom: 48px;
+  grid-area: subtitle;
+  align-self: end;
 }
 
-.place__url-heading {
+.place__artist {
   font-family: "Inter", arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -78,7 +86,7 @@
   text-align: left;
 }
 
-.place__artist {
+.place__artist-name {
   font-family: "Inter", arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -88,8 +96,8 @@
 
 .place__paragraphs {
   display: grid;
-  grid-column-start: 2;
-  grid-row: span 2;
+  grid-area: paragraphs;
+  grid-column: 2/4;
 }
 
 .place__paragraph {
