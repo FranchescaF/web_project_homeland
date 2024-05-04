@@ -13,6 +13,8 @@
   width: 1184px;
   height: 740px;
   z-index: -1;
+  position: absolute;
+  opacity: 0.7;
 }
 
 .cover__content {
@@ -22,9 +24,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   width: 656px;
 }
+
 .cover__title {
   font-family: "Inter", arial, sans-serif;
   font-size: 72px;
@@ -49,7 +51,7 @@
   font-weight: 600;
   line-height: 21.78px;
   text-align: left;
-  width: 198px;
+  max-width: 198px;
   height: 48px;
   padding: 13px 20px 13px 20px;
   border-radius: 4px;

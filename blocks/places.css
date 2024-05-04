@@ -29,10 +29,8 @@
   line-height: 76px;
   text-align: left;
   max-width: 584px;
-  width: 100%;
   max-height: 152px;
   margin: 0;
-  grid-column: span 3;
   grid-area: title;
 }
 
