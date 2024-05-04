@@ -58,3 +58,48 @@
   width: 720px;
   margin: 32px 0 0;
 }
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+    max-height: 607px;
+  }
+
+  .intro__title {
+    max-width: 720px;
+    max-height: 232px;
+    margin: 55px auto 15px;
+  }
+
+  .intro__text {
+    max-width: 720px;
+    max-height: 136;
+  }
+
+  .intro__paragraph {
+    width: 720px;
+    max-height: 182px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro__title {
+    max-width: 288px;
+    max-height: 175px;
+  }
+
+  .intro__text {
+    max-width: 288px;
+    max-height: 300px;
+  }
+
+  .intro__quote {
+    max-width: 288px;
+    max-height: 34px;
+  }
+
+  .intro__paragraph {
+    max-height: 442px;
+    max-width: 288px;
+  }
+}

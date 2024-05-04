@@ -14,3 +14,37 @@
   width: 100%;
   max-height: 213px;
 }
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .photo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 16px 16px;
+    max-width: 720px;
+    max-height: 1104px;
+    margin: 64px auto 88px;
+  }
+
+  .photo__item {
+    max-width: 352px;
+    max-height: 264px;
+  }
+}
+
+@media (max-width: 320px) {
+  .photo {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 12px;
+    max-width: 288px;
+    max-height: 1812px;
+    margin: 38px auto 62px;
+  }
+
+  .photo__item {
+    max-width: 288px;
+    max-height: 216px;
+  }
+}
