@@ -90,9 +90,24 @@
 @media (max-width: 320px) {
   .cover__image {
     width: 320px;
+    width: 100%;
   }
 
   .cover__content {
     width: 288px;
+  }
+
+  .cover__title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 35px;
+    width: 288px;
+  }
+
+  .cover__subtitle {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 280px;
   }
 }
