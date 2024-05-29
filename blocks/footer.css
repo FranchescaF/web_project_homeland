@@ -14,7 +14,9 @@
   line-height: 16px;
 }
 
-@media (min-width: 650px) and (max-width: 768px) {
+/*Media query para pantalla 768px*/
+
+@media (min-width: 501px) and (max-width: 768px) {
   .footer {
     width: 191px;
     width: 100%;
@@ -22,7 +24,9 @@
   }
 }
 
-@media (max-width: 320px) {
+/*Media query para pantalla 320px*/
+
+@media (max-width: 500px) {
   .footer {
     width: 191px;
     width: 100%;

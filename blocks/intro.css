@@ -19,7 +19,6 @@
   line-height: 58px;
   text-align: left;
   max-width: 1017px;
-  max-height: 116px;
 }
 
 .intro__texts {
@@ -34,7 +33,7 @@
   line-height: 34px;
   text-align: left;
   margin: 40px 0 0;
-  width: 722px;
+  max-width: 722px;
   position: relative;
 }
 
@@ -45,7 +44,8 @@
   line-height: 34px;
   text-align: right;
   position: absolute;
-  max-width: 722px;
+  right: 0;
+  bottom: -20px;
   margin: 10px 2px 0px 330px;
 }
 
@@ -59,47 +59,64 @@
   margin: 32px 0 0;
 }
 
-@media (min-width: 650px) and (max-width: 768px) {
+/*Media query para pantalla 768px*/
+
+@media (min-width: 501px) and (max-width: 768px) {
   .intro {
     max-width: 720px;
-    max-height: 607px;
   }
 
   .intro__title {
     max-width: 720px;
-    max-height: 232px;
     margin: 55px auto 15px;
   }
 
   .intro__text {
     max-width: 720px;
-    max-height: 136;
   }
 
   .intro__paragraph {
     width: 720px;
-    max-height: 182px;
   }
 }
 
-@media (max-width: 320px) {
+/*Media query para pantalla 320px*/
+
+@media (max-width: 500px) {
+  .intro {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .intro__title {
     max-width: 288px;
-    max-height: 175px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 44px auto 9px;
   }
 
   .intro__text {
     max-width: 288px;
-    max-height: 300px;
+    font-size: 24px;
+    width: 100%;
+    line-height: 30px;
+    margin: 0px auto 32px auto;
   }
 
   .intro__quote {
     max-width: 288px;
-    max-height: 34px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0px;
   }
 
   .intro__paragraph {
-    max-height: 442px;
     max-width: 288px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26.08px;
+    margin: 0px auto 38px;
   }
 }
