@@ -2,8 +2,6 @@
   display: block;
   margin: 34px auto 90px;
   max-width: 270px;
-  display: flex;
-  align-items: center;
 }
 
 /*Media query para pantalla 320px*/
