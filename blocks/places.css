@@ -107,6 +107,7 @@
 .place__text {
   font-family: "Inter", arial, sans-serif;
   margin-top: 0;
+  margin: auto;
   font-size: 18px;
   font-weight: 400;
   line-height: 29.34px;
